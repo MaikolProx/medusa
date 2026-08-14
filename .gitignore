@@ -1,0 +1,43 @@
+# Guarda los secretos y datos privados fuera del repo público
+# ==============================================================
+
+# Credenciales y claves
+*.env
+.env.*
+!*.env.example
+*.pem
+*.key
+*secret*
+*token*
+*n8n*_key*
+
+# Datos privados del usuario
+MEMORY.md
+SHARED_CONTEXT.md
+voice_output.txt
+voice_log.txt
+voice_input.txt
+*.db
+*.sqlite*
+db/
+
+# Sistema local
+scripts/
+n8n/
+backups/
+OUTPUTS/
+OUTPUT/
+.vault/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# Modelos descargados / pesos
+models/
+*.h5
+*.pt
+*.onnx
